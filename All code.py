@@ -310,3 +310,12 @@ print(credit_number[-3])
 # first will be inclusive - 1-3-(-)-6 ..... every second element
 print(credit_number[ : :3])
 
+
+# email slicer indexer
+email = input("Enter your email: ")
+index = email.index("@")
+username = email[0:index]
+domain = email[index:]
+
+print(f"Username: {username} - index : {index} - domain: {domain}")
+
