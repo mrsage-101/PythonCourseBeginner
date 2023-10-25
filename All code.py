@@ -220,4 +220,93 @@ elif operator_choice == "/":
 else:
     print("You choose not the mentioned operator")
 
+# temperature covertor
+unit = input("Is thish temperature in Celsius or Fahrenheit (C/F): ")
+temp = float(input("Enter the temperature: "))
+
+if unit == "C":
+    temp = round((9*temp)/5+32,1)
+    print(f"The temperature in Fahrenheit is: {temp} F")
+elif unit == "F":
+    temp = round((temp - 32) * 5/9,1)
+    print(f"The temperature in Celsius is: {temp} C")
+else: 
+    print(f"{unit} is an invalid unit of measurement")
+
+# logical operators and, or, not (it will change, if true then false,and false then true)
+temp = 25
+# and
+temp = int(input("Enter the temperature: "))
+
+if temp > 0 and temp < 30:
+    print("The temperature is good!")
+else:
+    print("The temperature is bad")
+
+# or
+temp = int(input("Enter the temperature: "))
+if temp < 0 or temp >= 30:
+    print("The temperature is bad")
+else:
+    print("The temperature is good in between")
+
+# not
+sunny = True
+
+if not sunny: # changes the true to false, and false to true
+    print("Don't play cricket outside")
+else:
+    print("Play cricket outside")
+
+# useful string methods
+name = input("Enter your full name: ")
+
+result1 = len(name)
+# first occurrence
+result2 = name.find(" ")
+# last occurrence
+result3 = name.rfind("a")
+# capitalize - the first char of the string
+result4 = name.capitalize()
+# UPPER will capitalize the whole string
+result5 = name.upper()
+# Lower
+result6 = name.lower()
+# isdigit
+result7 =  name.isdigit()
+# isalpha
+name = input("Enter your full name: ")
+result8 = name.isalpha()
+print(result8) 
+# count
+phone = input("Enter your phone number: ")
+result8 = phone.count("-")
+print(result8) 
+
+#exercise abubakar siddique
+# username should be less than 16 char, no spaces, no digits
+username = input("Enter the username: ")
+if len(username) > 16:
+    print("Your username can't be more than 12 characters")
+elif not username.find(" ") == -1:
+    print("You username doesnot contain spaces")
+elif username.isalpha() == False:
+    print("Your username cannot contain the digits")
+else:
+    print(f"Username : {username}")
+
+# string indexer
+# indexing [start:end:step]
+credit_number = "1234-5678-9012-3456"
+last_four = credit_number[-4:]
+print(last_four)
+reverse = credit_number[::-1]
+print(reverse)
+
+print(credit_number[0:4]) # 0 will be inclusive, and 4 will be exclusive
+print(credit_number[5:9])
+print(credit_number[5:19])
+print(credit_number[-3])
+# first will be inclusive - 1-3-(-)-6 ..... every second element
+print(credit_number[ : :3])
 
