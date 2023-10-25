@@ -317,5 +317,4 @@ index = email.index("@")
 username = email[0:index]
 domain = email[index:]
 
-print(f"Username: {username} - index : {index} - domain: {domain}")
-
+print(f"Username: {username} and index : {index} and domain: {domain}")
