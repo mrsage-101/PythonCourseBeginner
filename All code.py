@@ -301,7 +301,7 @@ credit_number = "1234-5678-9012-3456"
 last_four = credit_number[-4:]
 print(last_four)
 reverse = credit_number[::-1]
-print(reverse)
+print(f"the reverse credit numbber: {reverse}")
 
 print(credit_number[0:4]) # 0 will be inclusive, and 4 will be exclusive
 print(credit_number[5:9])
